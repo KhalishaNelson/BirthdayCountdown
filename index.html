@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="icon" href="./Images/icons8-birthday-cake-50.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+    <title>Sign In!</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <div id="logo-img">
+                <img src="./Images/icons8-birthday-cake-100.png" alt="Drawing of a birthday cake for logo.">
+            </div>
+            <div class="signin-text">
+                <h1>Birthday Countdown</h1>
+                <p>Glad to see you again! </p>
+            </div>
+            <form class="signin-form">
+                <label for="signin-email">Email</label>
+                <div class="input-group">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="signin-email" name="signin-email" placeholder="Email">
+                </div>
+                <label for="signin-pass">Password</label>
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="signin-pass" name="signin-pass" placeholder="Password">
+                </div>
+                <button type="button" id="signin-btn">Sign In</button>
+                <button type="button" id="newacct-btn">Don't have an account? Sign up!</button>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>

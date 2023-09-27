@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="countdown.css">
+    <link rel="icon" href="./Images/icons8-birthday-cake-50.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+    <title>Countdown</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="./Images/icons8-birthday-cake-50.png" alt="Drawing of a birthday cake for logo.">
+            <span><h1>Birthday Countdown</h1></span>
+        </div>
+        <div class="signout">
+            <button id="signout-btn" type="button">Sign Out</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="form-wrapper">
+            <div id="birthday-message" class="hidden message">
+                <h1>Happy Birthday, <span class="highlighted-text username">User</span>!</h1>
+                <div id="bm-quote">
+                    <p id="quote"></p>
+                    <p id="quotee"></p>
+                </div>
+                <div class="hbd-img">
+                    <img src="./Images/happy-birthday.gif" alt="Gif of a bear holding a present with Happy Birthday written at the top.">
+                </div>
+            </div>
+            <div id="countdown-message" class="shown message">
+                <h1>Hey, <span class="highlighted-text username">User</span>!</h1>
+                <p id="stmnt-change">There's <span class="highlighted-text" id="days-left"></span> days left until your birthday!</p>
+                <br>
+                <p>Remember to invite us to the party!</p>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="countdown.js"></script>
+
+</body>
+</html>

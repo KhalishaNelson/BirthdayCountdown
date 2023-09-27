@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Quicksand', 'Work Sans', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Styling Header */
+
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo h1 {
+    color: #3aaf9f;
+  }
+  
+  #signout-btn {
+    float: right;
+    width: 12rem;
+    height: 4rem;
+    background-color: #3aaf9f;
+    border: none;
+    border-radius: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #fff;
+    cursor: pointer;
+  }
+
+#signout-btn:hover {
+    color: #3aaf9f;
+    background-color: #fff;
+    border: solid 3px #3aaf9f;
+}
+
+  .header button:hover {
+    color: #3aaf9f;
+    background-color: #fff;
+    border: solid 3px #3aaf9f;
+}
+  
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+
+/* Styling Main Area */
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrapper {
+    position: relative;
+    width: 100em;
+    height: 80rem;
+    background-color: #eee;
+    border-radius: 3rem;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #555;
+    width: 50em;
+    margin: 8em auto;
+    z-index: 100;
+}
+
+.message h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.message p {
+    font-size: 2rem;
+}
+
+.highlighted-text {
+    color: #3aaf9f;
+}
+
+.hidden {
+    display: none;
+}
+
+#quote {
+  font-style: italic;
+}
+
+#quotee {
+  font-size: 1.5rem;
+}
+
+.hbd-img {
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+  height: 40em;
+}

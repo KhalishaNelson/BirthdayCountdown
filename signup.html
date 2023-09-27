@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="icon" href="./Images/icons8-birthday-cake-50.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+    <title>Sign Up!</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <div class="side-banner">
+                <div class="sb-text">
+                    <img src="./Images/icons8-birthday-cake-100.png" alt="Drawing of a birthday cake for logo.">
+                    <h1>Birthday Countdown</h1>
+                    <p>Join us for a countdown to your special day! </p>
+                </div>
+            </div>
+            <form action="" class="signup-form">
+                <h1>Create Account</h1>
+                <label for="username">Name</label>
+                <div class="input-group">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="username" name="username" placeholder="Name">
+                </div>
+                <label for="birthday">Date of Birth</label>
+                <div class="input-group">
+                    <i class="fa-solid fa-cake-candles"></i>
+                    <input type="date" id="birthday" name="birthday">
+                </div>
+                <label for="email">Email</label>
+                <div class="input-group">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+                <label for="pass" id="pass-label">Password</label>
+                <p id="pass-constraints">(6 characters min.)</p>
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="pass" name="pass" placeholder="Password">
+                </div>
+                <button type="button" id="signup-btn">Sign Up</button>
+                <button type="button" id="alreadyuser-btn">Already have an account? Sign in!</button>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="signup.js"></script>
+</body>
+</html>
